@@ -1,19 +1,14 @@
 package isec.pd;
 
-import java.time.LocalDate;
-
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Test annotation processor!" );
 
-        ClientTest ct = new ClientTest();
+        ClientTest ct = new ClientTest(2018, 1, 29);
 
-        LocalDate date = ct.date;
+        System.out.println(ct.toString());
+
     }
 }
