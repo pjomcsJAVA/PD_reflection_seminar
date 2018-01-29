@@ -20,7 +20,7 @@ public class App{
         if(args.length >= 1){
             qualifiedName = args[0];
             classFilePath = args[1];
-            System.out.println("sing VM args!");
+            System.out.println("using VM args!");
         }
 
         CustomClassLoader ccl = new CustomClassLoader(classFilePath);
